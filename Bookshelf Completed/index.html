@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title> Adam </title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+          </nav>  
+          <div id="counter-container">     
+        <div id="favorite-count"> 0</div>
+        </div>   
+        <div class="bookshelf"></div>
+      <form id="search">
+        <input type="text"  id="search-input" placeholder="Search by Title or Author">
+        <button type="submit">Search</button>
+      </form>
+        <form>
+            <label for="author">Author:</label><br>
+            <input type="text" id="author"><br>
+            <label for="language">Language:</label><br>
+            <input type="text" id="language"><br>
+            <label for="subject">Subjects:</label><br>
+            <input type="text" id="subject"><br>
+            <label for="title">Title:</label><br>
+            <input type="text" id="title"><br><br>
+            <button type="button" id="add-book-button">Add Book</button>
+        </form>
+        <label for="sort-select">Sort by:</label>
+        <select name="" id="sort-select">
+            <option value="title">Title</option>
+            <option value="author">Author</option>
+        </select>
+        <div id="book-list"></div>
+        
+        <script src="book.js" type= "module" ></script>
+        <script src="bookcode.js" type="module"></script>
+    </body>
+</html>
